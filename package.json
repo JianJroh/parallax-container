@@ -1,0 +1,42 @@
+{
+  "name": "parallax-container",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/parallax-container.umd.js",
+  "module": "./dist/parallax-container.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/parallax-container.es.js",
+      "require": "./dist/parallax-container.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "fmt": "prettier --write .",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-spring/web": "^9.5.5",
+    "@use-gesture/react": "^10.2.20"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "prettier": "^2.7.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.6.1"
+  }
+}

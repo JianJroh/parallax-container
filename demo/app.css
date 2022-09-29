@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+p {
+  padding: 16px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
