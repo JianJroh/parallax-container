@@ -20,7 +20,7 @@ npm install parallax-container
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/react-ts-xrftvt?file=App.tsx)
 
-## Configs
+## Usage
 
 ```tsx
 import { ParallaxContainer } from 'parallax-container';
@@ -37,7 +37,7 @@ function App() {
 export default App;
 ```
 
-## API
+## Configs
 
 ```ts
 interface Props {
