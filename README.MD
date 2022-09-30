@@ -2,6 +2,8 @@
 
 A React component container that can makes a graphic card with a parallax effect
 
+[![Published on npm](https://img.shields.io/npm/v/parallax-container.svg?logo=npm)](https://www.npmjs.com/package/parallax-container)
+
 ## Features
 
 - TypeScript friendly
