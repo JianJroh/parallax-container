@@ -20,6 +20,15 @@
     "fmt": "prettier --write .",
     "type:check": "tsc --noEmit"
   },
+  "keywords": [
+    "react",
+    "component",
+    "parallax card",
+    "parallax container"
+  ],
+  "repository": "git@github.com:JianJroh/parallax-container.git",
+  "author": "JianJroh",
+  "license": "MIT",
   "dependencies": {
     "@react-spring/web": "^9.5.5",
     "@use-gesture/react": "^10.2.20"
