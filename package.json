@@ -18,7 +18,8 @@
     "dev": "vite",
     "build": "vite build",
     "fmt": "prettier --write .",
-    "type:check": "tsc --noEmit"
+    "type:check": "tsc --noEmit",
+    "release": "npx bumpp --commit --tag --push"
   },
   "keywords": [
     "react",
