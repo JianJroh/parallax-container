@@ -7,7 +7,7 @@
   ],
   "main": "./dist/parallax-container.umd.js",
   "module": "./dist/parallax-container.es.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/parallax-container.es.js",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && tsc -p tsconfig.dts.json",
     "fmt": "prettier --write .",
     "type:check": "tsc --noEmit",
     "release": "npx bumpp --commit --tag --push"
@@ -35,7 +35,8 @@
     "@use-gesture/react": "^10.2.20"
   },
   "peerDependencies": {
-    "react": "^18.1.0"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.23",
@@ -46,7 +47,6 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "typescript": "^4.8.4",
-    "vite": "^3.1.0",
-    "vite-plugin-dts": "^1.6.1"
+    "vite": "^3.1.0"
   }
 }
