@@ -9,21 +9,22 @@ jobs:
   npm-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - uses: pnpm/action-setup@v2.0.1
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 7
+          version: 11
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
       - name: Install
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Check type
         run: pnpm run type:check
       - name: Build
         run: pnpm run build
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v3
         name: Publish npm
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
